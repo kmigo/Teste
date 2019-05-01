@@ -1,0 +1,54 @@
+#:import Toolbar kivymd.toolbar.Toolbar
+#:import MDAccordion kivymd.accordion.MDAccordion
+#:import MDAccordionItem kivymd.accordion.MDAccordionItem
+#:import MDAccordionSubItem kivymd.accordion.MDAccordionSubItem
+#:import MDTextField kivymd.textfields.MDTextField
+#:import MDRaisedButton kivymd.button.MDRaisedButton
+
+<HortifrutiHome>:
+	orientation:'vertical'
+	Toolbar:
+		title:'Meu Comercio'
+		md_bg_color:app.theme_cls.primary_color
+		elevation:10
+		left_action_items:[['menu', lambda x:root.show_accord()]]
+	
+	ScreenManager:
+		id:scr_mngr
+
+		Home:
+			
+<Home>:
+	name:'home'
+	BoxLayout:
+		orientation:'vertical'
+		BoxLayout:
+			orientation:'vertical'
+			padding:50
+			soacing:10
+			MDTextField:
+				hint_text:'usuario'
+			
+			MDTextField:
+				hint_text:'senha'
+				passwd:True		
+		BoxLayout:
+			Screen:
+				MDRaisedButton:
+					text:'Entrar'
+					pos_hint:{'center_x':.5,'center_y':.5}
+		
+
+<Fundo>:
+	padding:dp(15)
+	orientation:'vertical'
+	canvas.before:
+		Color:
+			rgba:.2,.2,.2,.2
+		RoundedRectangle:
+			size:self.size
+			pos:self.pos
+			radius:[100,]
+			
+	MDTextField:
+		hint_text:root.field_name

@@ -1,0 +1,133 @@
+[INFO   ] Logger: Record log in /storage/emulated/0/Dev/MeusProjetos/Hortifruti/.kivy/logs/kivy_19-03-24_63.txt
+[INFO   ] Kivy: v1.10.1.dev0, git-Unknown, 20171218
+[INFO   ] Python: v2.7.14 (default, Dec 18 2017, 09:30:59) 
+[GCC 7.2.0]
+[INFO   ] Factory: 194 symbols loaded
+[INFO   ] Image: Providers: img_tex, img_dds, img_sdl2, img_pil, img_gif (img_ffpyplayer ignored)
+[INFO   ] OSC: using <thread> for socket
+[INFO   ] Window: Provider: sdl2
+[INFO   ] GL: Using the "OpenGL ES 2" graphics system
+[INFO   ] GL: Backend used <gl>
+[INFO   ] GL: OpenGL version <OpenGL ES 3.2 V@269.0 (GIT@908a5ce, I77d3059488) (Date:06/07/18)>
+[INFO   ] GL: OpenGL vendor <Qualcomm>
+[INFO   ] GL: OpenGL renderer <Adreno (TM) 506>
+[INFO   ] GL: OpenGL parsed version: 3, 2
+[INFO   ] GL: Texture max size <16384>
+[INFO   ] GL: Texture max units <16>
+[INFO   ] Window: auto add sdl2 input provider
+[INFO   ] Window: virtual keyboard not allowed, single mode, not docked
+[INFO   ] KivyMD: KivyMD version: 0.92.0
+[INFO   ] Text: Provider: sdl2
+[INFO   ] GL: NPOT texture support is available
+[WARNING] Base: Unknown <android> provider
+[INFO   ] Base: Start application main loop
+[WARNING] Base: Failed to import "android" module. Could not remove android presplash.
+[WARNING] Factory: Ignored class "Accord" re-declaration. Current -  module: None, cls: <class 'screens.widgets.Accord'>, baseclass: None, filename: None. Ignored -  module: None, cls: None, baseclass: Screen, filename: None.
+[WARNING] Accordion: not enough space for displaying all children
+[WARNING] Accordion: need 396px, got 100px
+[WARNING] Accordion: layout aborted.
+[WARNING] Accordion: not enough space for displaying all children
+[WARNING] Accordion: need 396px, got 100px
+[WARNING] Accordion: layout aborted.
+[WARNING] Factory: Ignored class "InputProduct" re-declaration. Current -  module: None, cls: <class 'screens.widgets.InputProduct'>, baseclass: None, filename: None. Ignored -  module: None, cls: None, baseclass: Screen, filename: None.
+[INFO   ] Base: Leaving application in progress...
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/storage/emulated/0/Dev/MeusProjetos/Hortifruti/main.py", line 42, in <module>
+[WARNING] stderr:     HortifrutiApp().run()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid2/files/arm-linux-androideabi/lib/python2.7/site-packages/kivy/app.py", line 829, in run
+[WARNING] stderr:     runTouchApp()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid2/files/arm-linux-androideabi/lib/python2.7/site-packages/kivy/base.py", line 502, in runTouchApp
+[WARNING] stderr:     EventLoop.window.mainloop()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid2/files/arm-linux-androideabi/lib/python2.7/site-packages/kivy/core/window/window_sdl2.py", line 720, in mainloop
+[WARNING] stderr:     self._mainloop()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid2/files/arm-linux-androideabi/lib/python2.7/site-packages/kivy/core/window/window_sdl2.py", line 457, in _mainloop
+[WARNING] stderr:     EventLoop.idle()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid2/files/arm-linux-androideabi/lib/python2.7/site-packages/kivy/base.py", line 340, in idle
+[WARNING] stderr:     self.dispatch_input()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid2/files/arm-linux-androideabi/lib/python2.7/site-packages/kivy/base.py", line 325, in dispatch_input
+[WARNING] stderr:     post_dispatch_input(*pop(0))
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid2/files/arm-linux-androideabi/lib/python2.7/site-packages/kivy/base.py", line 231, in post_dispatch_input
+[WARNING] stderr:     listener.dispatch('on_motion', etype, me)
+[WARNING] stderr:   File "kivy/_event.pyx", line 707, in kivy._event.EventDispatcher.dispatch (kivy/_event.c:7797)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid2/files/arm-linux-androideabi/lib/python2.7/site-packages/kivy/core/window/__init__.py", line 1339, in on_motion
+[WARNING] stderr:     self.dispatch('on_touch_up', me)
+[WARNING] stderr:   File "kivy/_event.pyx", line 707, in kivy._event.EventDispatcher.dispatch (kivy/_event.c:7797)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid2/files/arm-linux-androideabi/lib/python2.7/site-packages/kivy/core/window/__init__.py", line 1375, in on_touch_up
+[WARNING] stderr:     if w.dispatch('on_touch_up', touch):
+[WARNING] stderr:   File "kivy/_event.pyx", line 707, in kivy._event.EventDispatcher.dispatch (kivy/_event.c:7797)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid2/files/arm-linux-androideabi/lib/python2.7/site-packages/kivy/uix/widget.py", line 479, in on_touch_up
+[WARNING] stderr:     if child.dispatch('on_touch_up', touch):
+[WARNING] stderr:   File "kivy/_event.pyx", line 707, in kivy._event.EventDispatcher.dispatch (kivy/_event.c:7797)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid2/files/arm-linux-androideabi/lib/python2.7/site-packages/kivy/uix/screenmanager.py", line 1201, in on_touch_up
+[WARNING] stderr:     return super(ScreenManager, self).on_touch_up(touch)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid2/files/arm-linux-androideabi/lib/python2.7/site-packages/kivy/uix/widget.py", line 479, in on_touch_up
+[WARNING] stderr:     if child.dispatch('on_touch_up', touch):
+[WARNING] stderr:   File "kivy/_event.pyx", line 707, in kivy._event.EventDispatcher.dispatch (kivy/_event.c:7797)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid2/files/arm-linux-androideabi/lib/python2.7/site-packages/kivy/uix/relativelayout.py", line 304, in on_touch_up
+[WARNING] stderr:     ret = super(RelativeLayout, self).on_touch_up(touch)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid2/files/arm-linux-androideabi/lib/python2.7/site-packages/kivy/uix/widget.py", line 479, in on_touch_up
+[WARNING] stderr:     if child.dispatch('on_touch_up', touch):
+[WARNING] stderr:   File "kivy/_event.pyx", line 707, in kivy._event.EventDispatcher.dispatch (kivy/_event.c:7797)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid2/files/arm-linux-androideabi/lib/python2.7/site-packages/kivy/uix/widget.py", line 479, in on_touch_up
+[WARNING] stderr:     if child.dispatch('on_touch_up', touch):
+[WARNING] stderr:   File "kivy/_event.pyx", line 707, in kivy._event.EventDispatcher.dispatch (kivy/_event.c:7797)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid2/files/arm-linux-androideabi/lib/python2.7/site-packages/kivy/uix/carousel.py", line 583, in on_touch_up
+[WARNING] stderr:     super(Carousel, self).on_touch_down(touch)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid2/files/arm-linux-androideabi/lib/python2.7/site-packages/kivy/uix/widget.py", line 457, in on_touch_down
+[WARNING] stderr:     if child.dispatch('on_touch_down', touch):
+[WARNING] stderr:   File "kivy/_event.pyx", line 707, in kivy._event.EventDispatcher.dispatch (kivy/_event.c:7797)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid2/files/arm-linux-androideabi/lib/python2.7/site-packages/kivy/uix/relativelayout.py", line 288, in on_touch_down
+[WARNING] stderr:     ret = super(RelativeLayout, self).on_touch_down(touch)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid2/files/arm-linux-androideabi/lib/python2.7/site-packages/kivy/uix/widget.py", line 457, in on_touch_down
+[WARNING] stderr:     if child.dispatch('on_touch_down', touch):
+[WARNING] stderr:   File "kivy/_event.pyx", line 707, in kivy._event.EventDispatcher.dispatch (kivy/_event.c:7797)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid2/files/arm-linux-androideabi/lib/python2.7/site-packages/kivy/uix/relativelayout.py", line 288, in on_touch_down
+[WARNING] stderr:     ret = super(RelativeLayout, self).on_touch_down(touch)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid2/files/arm-linux-androideabi/lib/python2.7/site-packages/kivy/uix/widget.py", line 457, in on_touch_down
+[WARNING] stderr:     if child.dispatch('on_touch_down', touch):
+[WARNING] stderr:   File "kivy/_event.pyx", line 707, in kivy._event.EventDispatcher.dispatch (kivy/_event.c:7797)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid2/files/arm-linux-androideabi/lib/python2.7/site-packages/kivy/uix/widget.py", line 457, in on_touch_down
+[WARNING] stderr:     if child.dispatch('on_touch_down', touch):
+[WARNING] stderr:   File "kivy/_event.pyx", line 707, in kivy._event.EventDispatcher.dispatch (kivy/_event.c:7797)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid2/files/arm-linux-androideabi/lib/python2.7/site-packages/kivy/uix/widget.py", line 457, in on_touch_down
+[WARNING] stderr:     if child.dispatch('on_touch_down', touch):
+[WARNING] stderr:   File "kivy/_event.pyx", line 707, in kivy._event.EventDispatcher.dispatch (kivy/_event.c:7797)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid2/files/arm-linux-androideabi/lib/python2.7/site-packages/kivy/uix/widget.py", line 457, in on_touch_down
+[WARNING] stderr:     if child.dispatch('on_touch_down', touch):
+[WARNING] stderr:   File "kivy/_event.pyx", line 707, in kivy._event.EventDispatcher.dispatch (kivy/_event.c:7797)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid2/files/arm-linux-androideabi/lib/python2.7/site-packages/kivy/uix/widget.py", line 457, in on_touch_down
+[WARNING] stderr:     if child.dispatch('on_touch_down', touch):
+[WARNING] stderr:   File "kivy/_event.pyx", line 707, in kivy._event.EventDispatcher.dispatch (kivy/_event.c:7797)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid2/files/arm-linux-androideabi/lib/python2.7/site-packages/kivy/uix/textinput.py", line 1340, in on_touch_down
+[WARNING] stderr:     if super(TextInput, self).on_touch_down(touch):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid2/files/arm-linux-androideabi/lib/python2.7/site-packages/kivy/uix/behaviors/focus.py", line 441, in on_touch_down
+[WARNING] stderr:     self.focus = True
+[WARNING] stderr:   File "kivy/properties.pyx", line 478, in kivy.properties.Property.__set__ (kivy/properties.c:5206)
+[WARNING] stderr:   File "kivy/properties.pyx", line 516, in kivy.properties.Property.set (kivy/properties.c:5967)
+[WARNING] stderr:   File "kivy/properties.pyx", line 571, in kivy.properties.Property.dispatch (kivy/properties.c:6631)
+[WARNING] stderr:   File "kivy/_event.pyx", line 1214, in kivy._event.EventObservers.dispatch (kivy/_event.c:13511)
+[WARNING] stderr:   File "kivy/_event.pyx", line 1120, in kivy._event.EventObservers._dispatch (kivy/_event.c:12713)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid2/files/arm-linux-androideabi/lib/python2.7/site-packages/kivy/uix/behaviors/focus.py", line 384, in _on_focus
+[WARNING] stderr:     self._bind_keyboard()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid2/files/arm-linux-androideabi/lib/python2.7/site-packages/kivy/uix/behaviors/focus.py", line 399, in _bind_keyboard
+[WARNING] stderr:     self._ensure_keyboard()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid2/files/arm-linux-androideabi/lib/python2.7/site-packages/kivy/uix/behaviors/focus.py", line 393, in _ensure_keyboard
+[WARNING] stderr:     self._keyboard_released, self, input_type=self.input_type)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid2/files/arm-linux-androideabi/lib/python2.7/site-packages/kivy/core/window/window_sdl2.py", line 767, in request_keyboard
+[WARNING] stderr:     request_keyboard(callback, target, input_type)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid2/files/arm-linux-androideabi/lib/python2.7/site-packages/kivy/core/window/__init__.py", line 1868, in request_keyboard
+[WARNING] stderr:     self.release_keyboard(target)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid2/files/arm-linux-androideabi/lib/python2.7/site-packages/kivy/core/window/window_sdl2.py", line 773, in release_keyboard
+[WARNING] stderr:     super(WindowSDL, self).release_keyboard(*largs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid2/files/arm-linux-androideabi/lib/python2.7/site-packages/kivy/core/window/__init__.py", line 1946, in release_keyboard
+[WARNING] stderr:     callback()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid2/files/arm-linux-androideabi/lib/python2.7/site-packages/kivy/uix/behaviors/focus.py", line 433, in _keyboard_released
+[WARNING] stderr:     self.focus = False
+[WARNING] stderr:   File "kivy/properties.pyx", line 478, in kivy.properties.Property.__set__ (kivy/properties.c:5206)
+[WARNING] stderr:   File "kivy/properties.pyx", line 516, in kivy.properties.Property.set (kivy/properties.c:5967)
+[WARNING] stderr:   File "kivy/properties.pyx", line 571, in kivy.properties.Property.dispatch (kivy/properties.c:6631)
+[WARNING] stderr:   File "kivy/_event.pyx", line 1214, in kivy._event.EventObservers.dispatch (kivy/_event.c:13511)
+[WARNING] stderr:   File "kivy/_event.pyx", line 1120, in kivy._event.EventObservers._dispatch (kivy/_event.c:12713)
+[WARNING] stderr:   File "/storage/emulated/0/Dev/MeusProjetos/Hortifruti/screens/widgets.py", line 591, in on_focus
+[WARNING] stderr:     sepf.text = 'R$'+nv[:3]+','+nv[3:6]+'.'+nv[6:]
+[WARNING] stderr: NameError: global name 'sepf' is not defined
